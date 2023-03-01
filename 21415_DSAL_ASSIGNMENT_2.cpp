@@ -215,7 +215,7 @@ class BT{
 		}
 		cout<<"Pre order = ";
 		preorder(root);
-		cout<<endl;x
+		cout<<endl;
 		cout<<"Post order = ";
 		postorder(root);
 		cout<<endl;
