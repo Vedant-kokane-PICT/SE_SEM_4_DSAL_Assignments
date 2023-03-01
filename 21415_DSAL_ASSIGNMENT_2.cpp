@@ -224,22 +224,6 @@ class BT{
 		cout<<endl;
 
 	}
-	void display1(node *root1){
-			if(root1==NULL){
-				cout<<"Tree is Empty"<<endl;
-				return;
-			}
-			cout<<"Pre order = ";
-			preorder(root1);
-			cout<<endl;
-			cout<<"Post order = ";
-			postorder(root);
-			cout<<endl;
-			cout<<"In order = ";
-			inorder(root1);
-			cout<<endl;
-
-		}
 	int search(int x){
 		node *temp = root;
 		while(temp != NULL){
