@@ -240,7 +240,7 @@ int main()
 			b1.preorder();
 		}
 		else if(c==4){
-		    int x;
+		     	int x;
 			cout<<"Enter value of node that to be deleted"<<endl;
 			cin>>x;
 			b1.deleteNode(x);
