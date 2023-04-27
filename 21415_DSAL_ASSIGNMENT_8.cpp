@@ -52,20 +52,7 @@ public:
 	}
 
 	void sortDescending(){
-		for(int i=0;i<totalKeys;i++){
-			for(int j=0;j<totalKeys-i;j++){
-				if(frequency[j] > frequency[j+1]){
-					int t1 = frequency[j];
-					frequency[j] = frequency[j+1];
-					frequency[j+1] = t1;
-					int t2 = keys[j];
-					keys[j] = keys[j+1];
-					keys[j+1] = t2;
-				}
-			}
-		}
-
-		//
+		// use of Bubble sort to sort the frequency and keys array
 		for(int i=totalKeys;i>=0;i--){
 			for (int j = totalKeys; j > totalKeys - i; j--){
 				if(frequency[j] > frequency[j-1]){
@@ -148,13 +135,14 @@ public:
 
 	void calculateCost(){
 		sortDescending();
+		cout<<"Keys    Frequency    Level    Search Cost"<<endl;
 		for(int i=0;i<totalKeys;i++){
 			int x = keys[i];
 			int c1 = 0;
 			int level = search(x);
 			c1 = frequency[i] * (level + 1);
 			level++;
-			cout<<"Key - "<<keys[i]<<", Frequency - "<<frequency[i]<<", Search cost - "<<c1<<endl;
+			cout<<keys[i]<<"           "<<frequency[i]<<"         "<<level-1<<"         "<<c1<<endl;
 			totalCost = totalCost + c1;
 		}
 		cout<<"Total cost = "<<totalCost<<endl;
