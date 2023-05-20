@@ -290,10 +290,10 @@ int main() {
             a1.display();
         }
         else{
-			cout<<"You have entered a wrong choice"<<endl;
-		}
-		cout<<"Do you want to continue (y/n) -"<<endl;
-		cin>>ch;
+		cout<<"You have entered a wrong choice"<<endl;
+	}
+	cout<<"Do you want to continue (y/n) -"<<endl;
+	cin>>ch;
 	}
 	return 0;
 }
