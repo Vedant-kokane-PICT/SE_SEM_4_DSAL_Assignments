@@ -55,7 +55,6 @@ public:
 	}
 
 	void heapSort(){
-		// Build max heap
 	    for (int i = total / 2 - 1; i >= 0; i--){
 	      heapify(i,total);
 	    }
