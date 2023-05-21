@@ -1,4 +1,4 @@
-# SE-SEM---4-DSAL-Assignments
+# SE_SEM_4_DSAL_Assignments
 
 1. Beginning with an empty binary search tree. Construct the binary search tree by
 inserting the values in given order. After constructing binary search tree perform
