@@ -134,7 +134,7 @@ public:
 	}
 
 	node* rotateLeftRight(node* p){
-		// rl_rotate
+		// lr_rotate
 		p->left = rotateLeft(p->left);
 		return rotateRight(p);
 	}
