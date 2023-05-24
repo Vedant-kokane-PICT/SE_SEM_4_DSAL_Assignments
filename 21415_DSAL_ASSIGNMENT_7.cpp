@@ -11,58 +11,7 @@
 using namespace std;
 #define m 10
 
-template<class T>
-class Stack{
-	T a[m];
-	int top;
-public:
-	Stack(){
-		top = -1;
-	}
 
-	void push(T temp){
-		if(top == m-1){
-			//cout<<"Overflow"<<endl;
-			return;
-		}
-		else{
-			top++;
-			a[top] = temp;
-		}
-	}
-
-	T pop(){
-		if(top == -1){
-			//cout<<"Underflow"<<endl;
-
-		}
-		T temp = a[top];
-		top--;
-		return temp;
-	}
-
-	bool is_empty(){
-		if(top == -1){
-			return 1;
-		}
-		return 0;
-	}
-
-	bool inStack(T edge){
-		string s1 = edge.sd;
-		for(int i=0;i<=top;i++){
-			if(s1 == a[i].sd){
-				if(s1 < a[i].sd){
-					a[i].sd = s1;
-					return 1;
-				}
-				return 1;
-			}
-		}
-
-		return 0;
-	}
-};
 
 class Graph{
     int **graph;
